@@ -5,10 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module 28: API, JSON, Data load, dynamic website
 </title>
+<style>
+    #post-Container{
+        width: 1280px;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 100px;
+    }
+    #post-card{
+        width: 250px;
+        height: 100%;
+        border: 1px solid grey;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px gold;
+        
+    }
+    #post-card p{
+        text-align: justify;
+    }
+</style>
 </head>
 <body>
 
-    <h1>Module 28: API, JSON, Data load, dynamic website</h1>
-    
+    <h1> Module 28: API, JSON, Data load, dynamic website </h1>
+
+    <button onclick="loadData()">Load data</button>
+
+    <button onclick="loadPosts()">Load posts</button>
+
+    <div id="post-Container">
+       
+    </div>
+
+
+    <!-- JavaScrit Connected  -->
+    <script src="./script.js"></script>
+    <script src="./lodaData.js"></script>
+    <script src="./postsData.js"></script>
 </body>
 </html>
