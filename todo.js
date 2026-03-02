@@ -8,7 +8,7 @@ function todoData (){
     .then((res) => res.json())
     .then((data) => displayTodo(data))
 };
-todoData();
+todoData(); 
 
 // {
 //     "userId": 7,
@@ -32,12 +32,13 @@ todoData();
             <p> ${todos.userId} </p>
             <p> ${todos.id} </p>
             <h2> ${todos.title}</h2>
-            <h4> ${todos.completed == true ? `<i class="fa-solid fa-check"></i>` : `<i class="fa-solid fa-x"></i>` }</h4>
+            <h4> ${todos.completed == true ? `<i class="fa-solid fa-check"></i>` : `<i class="fa-solid fa-x"></i>`}</h4>
         </div>
 
         `
         // MainContainer Child korte hbe
         mainContainer.appendChild(displayDiv)
     })
+    // todoData(); 
     
  }
